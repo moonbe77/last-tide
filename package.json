@@ -1,0 +1,30 @@
+{
+  "name": "last-tide",
+  "version": "1.0.0",
+  "description": "Microservicio que devuelve json del ultimo dato de marea medido por el sensor ubicdo en el cnsm",
+  "main": "app.js",
+  "env": {
+		"NODE_ENV": "production"
+	},
+  "scripts": {
+    "test" : "echo \"Error: no test specified\" && exit 1",
+    "start" : "micro",
+    "dev" : "micro-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonbe77/last-tide.git"
+  },
+  "author": "moonbe77",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moonbe77/last-tide/issues"
+  },
+  "homepage": "https://github.com/moonbe77/last-tide#readme",
+  "dependencies": {
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "micro-dev": "^2.2.2"
+  }
+}
