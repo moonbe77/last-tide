@@ -21,6 +21,6 @@ let write = ( m )  => {
     if (m) {
         nodoMarea.innerHTML = `Altura: ${m[0].altura} mts`
         nodoTemp.innerHTML = `Temp: ${m[0].temp}°C`
-        nodoDate.innerHTML = `date`
+        nodoDate.innerHTML = `date ${m[0].date}`
     }
 }
