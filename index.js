@@ -1,5 +1,6 @@
 let nodoMarea = document.querySelector('#marea')
 let nodoTemp = document.querySelector('#temp')
+let nodoDate = document.querySelector('#date')
 
 fetch('https://last-tide-pvrmcucimo.now.sh/',{
     method : "GET",
@@ -20,5 +21,6 @@ let write = ( m )  => {
     if (m) {
         nodoMarea.innerHTML = `Altura: ${m[0].altura} mts`
         nodoTemp.innerHTML = `Temp: ${m[0].temp}°C`
+        nodoDate.innerHTML = `date`
     }
 }
