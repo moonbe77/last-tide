@@ -12,7 +12,7 @@ module.exports = (req ,res ) => {
             "Access-Control-Allow-Origin" : "*"
         });
         res.end(result)
-        });
+     });
 }
 
 function getSQL(callback) {

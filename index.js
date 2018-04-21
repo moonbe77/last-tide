@@ -18,9 +18,11 @@ fetch('https://last-tide-pvrmcucimo.now.sh/',{
 })
 
 let write = ( m )  => {
+    let date = new Date(m[0].date)
+    console.log(date);
     if (m) {
-        nodoMarea.innerHTML = `Altura: ${m[0].altura} mts`
-        nodoTemp.innerHTML = `Temp: ${m[0].temp}°C`
-        nodoDate.innerHTML = `date ${m[0].date}`
+        nodoMarea.innerHTML = `${m[0].altura}`
+        nodoTemp.innerHTML = `${m[0].temp}`
+        nodoDate.innerHTML = `${date}`
     }
 }
