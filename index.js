@@ -20,11 +20,19 @@ fetch('https://last-tide-pvrmcucimo.now.sh/',{
     console.log(err)
 })
 
+console.log(moment.locale());
+
 let write = ( m )  => {
-    let date = new Date(m[0].date)
-    console.log(date);
+    let date = new Date(m[0].date)  
+    moment.locale('es');
+    let difDate = (lastDate) =>{
+        let dif = moment(lastDate).fromNow();        
+        console.log(dif)        
+        return  dif
+    }
+
     if (m) {
-        nodoStatus.innerText ="ok"        
+        nodoStatus.innerText =`OK, Ultimo Valor ${difDate(date)}`        
         nodoMarea.innerHTML = `${m[0].altura}`
         nodoTemp.innerHTML = `${m[0].temp}`
         nodoDate.innerHTML = `${date}`
